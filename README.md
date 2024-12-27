@@ -11,7 +11,7 @@ git clone https://github.com/RBaykan/Spring_Security_Register_Email_Verification
 ```
 2. **Navigate to the project directory**:
 ```bash
-cd Spring_Security_Register_Email_Verification_Token
+cd Spring_Security_Register_Resend_Email_Verifacation_Token
 ```
 3. **Dependencies and build the project**:
 ```bash
