@@ -1,0 +1,31 @@
+package com.spring.web.dto;
+
+
+import com.spring.web.validation.EmailValid;
+import com.spring.web.validation.PasswordMatches;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@PasswordMatches
+public class CreateUser{
+
+	
+	@NotBlank String firstname;
+	@NotBlank private String lastname;
+	@NotBlank private String username;
+	@NotBlank private String password;
+	@NotBlank private String repassword ;
+	
+	@NotBlank @EmailValid private String email;
+
+}
