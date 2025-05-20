@@ -23,8 +23,7 @@ mvn spring-boot:run
 ```
 The application should now be running on `http://localhost:8080.`
 
-4. Here’s the English translation:
-  To retrieve a new verification token for predefined users, send a `GET` request to:
+4. To retrieve a new verification token for predefined users, send a `GET` request to:
   `http://localhost:8080/api/user/reSendRegistrationToken?email=user@usermail.com`
 
   This will invalidate the user's old verification tokens and generate a new verification token.
